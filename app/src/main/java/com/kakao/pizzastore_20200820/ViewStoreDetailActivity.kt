@@ -28,7 +28,6 @@ class ViewStoreDetailActivity : BaseActivity() {
         nameTxt.text = mStore.name
         phoneNumTxt.text = mStore.phoneNum
         Glide.with(mContext).load(mStore.logoUrl).into(logoImg)
-
     }
 
 }
