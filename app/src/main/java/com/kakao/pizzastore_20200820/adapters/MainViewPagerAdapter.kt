@@ -1,10 +1,10 @@
-package com.kakao.adapters
+package com.kakao.pizzastore_20200820.adapters
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.kakao.fragments.MyProfileFragment
-import com.kakao.fragments.PizzaStoreFragment
+import com.kakao.pizzastore_20200820.fragments.MyProfileFragment
+import com.kakao.pizzastore_20200820.fragments.PizzaStoreFragment
 
 //8
 class MainViewPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {

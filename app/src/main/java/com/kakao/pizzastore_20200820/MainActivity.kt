@@ -1,8 +1,7 @@
 package com.kakao.pizzastore_20200820
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.kakao.adapters.MainViewPagerAdapter
+import com.kakao.pizzastore_20200820.adapters.MainViewPagerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 //BaseActivity

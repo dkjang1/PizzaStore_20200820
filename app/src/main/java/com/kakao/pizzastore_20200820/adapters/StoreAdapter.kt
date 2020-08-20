@@ -1,4 +1,4 @@
-package com.kakao.adapters
+package com.kakao.pizzastore_20200820.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
 import com.bumptech.glide.Glide
-import com.kakao.datas.Store
+import com.kakao.pizzastore_20200820.datas.Store
 import com.kakao.pizzastore_20200820.R
 import de.hdodenhof.circleimageview.CircleImageView
 

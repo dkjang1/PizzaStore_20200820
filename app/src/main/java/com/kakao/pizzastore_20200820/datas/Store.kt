@@ -1,4 +1,4 @@
-package com.kakao.datas
+package com.kakao.pizzastore_20200820.datas
 
 import java.io.Serializable
 

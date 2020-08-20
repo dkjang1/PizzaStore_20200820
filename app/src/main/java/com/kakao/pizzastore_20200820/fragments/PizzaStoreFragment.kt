@@ -1,12 +1,12 @@
-package com.kakao.fragments
+package com.kakao.pizzastore_20200820.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.kakao.adapters.StoreAdapter
-import com.kakao.datas.Store
+import com.kakao.pizzastore_20200820.adapters.StoreAdapter
+import com.kakao.pizzastore_20200820.datas.Store
 import com.kakao.pizzastore_20200820.R
 import kotlinx.android.synthetic.main.fragment_pizza_store.*
 
