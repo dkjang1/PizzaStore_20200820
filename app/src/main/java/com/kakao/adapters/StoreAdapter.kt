@@ -5,8 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.TextView
+import com.bumptech.glide.Glide
 import com.kakao.datas.Store
 import com.kakao.pizzastore_20200820.R
+import de.hdodenhof.circleimageview.CircleImageView
 
 class StoreAdapter(
 //14
@@ -24,8 +27,16 @@ class StoreAdapter(
         if (tempRow == null) {
             tempRow = inf.inflate(R.layout.store_list_item, null)
         }
-
         val row = tempRow!!
+
+        //16
+        var logoImg = row.findViewById<CircleImageView>(R.id.logoImg)
+        var nameTxt = row.findViewById<TextView>(R.id.nameTxt)
+        var data = mList[position]
+        nameTxt.text = data.name
+        Glide.with(mContext).load(data.logoUrl).into(logoImg)
+//        logoImg.src = data.logoUrl
+
         return row
     }
 
