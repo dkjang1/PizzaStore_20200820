@@ -31,7 +31,7 @@ class MainActivity : BaseActivity() {
         mvpa = MainViewPagerAdapter(supportFragmentManager)
         mainViewPager.adapter = mvpa
 //10 : tabLayout - build.gradle : implementation 'com.android.support:design:29.0.3'
-        tabLayout.setupWithViewPager(mainViewPager)
+        mainTabLayout.setupWithViewPager(mainViewPager)
 
     }
 
