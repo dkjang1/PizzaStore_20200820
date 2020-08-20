@@ -23,13 +23,13 @@ class MainActivity : BaseActivity() {
 
     }
 
-//9
-    lateinit var mMainViewPagerAdapter: MainViewPagerAdapter
+//9 : mvpa - MainViewPagerAdapter
+    lateinit var mvpa : MainViewPagerAdapter
 
     override fun setValues() {
 //9-1
-        mMainViewPagerAdapter = MainViewPagerAdapter(supportFragmentManager)
-        mainViewPager.adapter = mMainViewPagerAdapter
+        mvpa = MainViewPagerAdapter(supportFragmentManager)
+        mainViewPager.adapter = mvpa
 //10 : tabLayout - build.gradle : implementation 'com.android.support:design:29.0.3'
         tabLayout.setupWithViewPager(mainViewPager)
 
