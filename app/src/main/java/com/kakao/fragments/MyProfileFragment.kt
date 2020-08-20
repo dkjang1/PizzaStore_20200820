@@ -10,6 +10,7 @@ import com.kakao.pizzastore_20200820.R
 //6
 class MyProfileFragment : Fragment(){
 
+//6-1
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -19,6 +20,7 @@ class MyProfileFragment : Fragment(){
         return inflater.inflate(R.layout.fragment_my_profile, container, false)
     }
 
+//6-2
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
     }

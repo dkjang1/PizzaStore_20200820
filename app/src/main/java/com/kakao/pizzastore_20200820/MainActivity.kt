@@ -2,6 +2,8 @@ package com.kakao.pizzastore_20200820
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.kakao.adapters.MainViewPagerAdapter
+import kotlinx.android.synthetic.main.activity_main.*
 
 //BaseActivity
 //STEP1 : Fragment + ViewPager + TabLayout
@@ -21,7 +23,15 @@ class MainActivity : BaseActivity() {
 
     }
 
+//9
+    lateinit var mMainViewPagerAdapter: MainViewPagerAdapter
+
     override fun setValues() {
+//9-1
+        mMainViewPagerAdapter = MainViewPagerAdapter(supportFragmentManager)
+        mainViewPager.adapter = mMainViewPagerAdapter
+//10 : tabLayout - build.gradle : implementation 'com.android.support:design:29.0.3'
+        tabLayout.setupWithViewPager(mainViewPager)
 
     }
 
