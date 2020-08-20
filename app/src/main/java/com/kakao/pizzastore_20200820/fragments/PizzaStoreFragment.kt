@@ -1,5 +1,6 @@
 package com.kakao.pizzastore_20200820.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +9,7 @@ import androidx.fragment.app.Fragment
 import com.kakao.pizzastore_20200820.adapters.StoreAdapter
 import com.kakao.pizzastore_20200820.datas.Store
 import com.kakao.pizzastore_20200820.R
+import com.kakao.pizzastore_20200820.ViewStoreDetailActivity
 import kotlinx.android.synthetic.main.fragment_pizza_store.*
 
 //2
@@ -69,6 +71,18 @@ class PizzaStoreFragment : Fragment() {
         //15-3
         mPizzaStoreAdapter = StoreAdapter(context!!, R.layout.store_list_item, mPizzaStoreList)
         pizzaStoreListView.adapter = mPizzaStoreAdapter
+
+
+        //17
+        pizzaStoreListView.setOnItemClickListener { adapterView, view, position, l ->
+
+            val clickedStore = mPizzaStoreList[position]
+            val myIntent = Intent(context, ViewStoreDetailActivity::class.java)
+//17-1 : Store.class -> Serializable
+            myIntent.putExtra("storeInfo", clickedStore)
+            startActivity(myIntent)
+
+        }
     }
 
 }
