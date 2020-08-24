@@ -8,20 +8,23 @@
     android:padding="15dp"
     tools:context=".EditNicknameActivity">
 
+    <!--18-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="새 닉네임 입력" />
 
     <EditText
+        android:id="@+id/newNicknameEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="한줄로 입력(5글자이상)"
         android:singleLine="true" />
 
     <Button
+        android:id="@+id/okBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="변경확인" />
+        android:text="닉네임 변경확인" />
 
 </LinearLayout>

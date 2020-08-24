@@ -13,6 +13,9 @@ import kotlinx.android.synthetic.main.fragment_my_profile.*
 //6:내정보변경 -> 7:TabLayout(StorePagerAdapter.kt)
 class MyProfileFragment : Fragment(){
 
+    //17-1
+    val REQ_FOR_NICKNAME = 1000
+
     //6-1:onCreateView
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -31,6 +34,9 @@ class MyProfileFragment : Fragment(){
         changeNicknameBtn.setOnClickListener {
 
             val myIntent = Intent(context!!, EditNicknameActivity::class.java)
+            //startActivityForResult(myIntent, 1000)
+            startActivityForResult(myIntent, REQ_FOR_NICKNAME)
+
         }
 
     }
