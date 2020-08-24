@@ -5,14 +5,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!--    12-->
+    <!--11:CircleImageView(build.gradle) -> 12:피자가게목록(StoreAdapter.kt)-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="10dp">
-        <!--   13-->
+
+        <!--11-1:circleimageview(build.gradle)-->
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/logoImg"
             android:layout_width="40dp"
