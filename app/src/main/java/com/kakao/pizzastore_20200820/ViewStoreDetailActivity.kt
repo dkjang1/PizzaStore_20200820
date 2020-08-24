@@ -12,7 +12,7 @@ import com.kakao.pizzastore_20200820.datas.Store
 import kotlinx.android.synthetic.main.activity_view_store_detail.*
 import java.util.jar.Manifest
 
-//15:피자가게상세페이지(Intent) -> 16:피자가게전화걸기
+//15:피자가게상세페이지(Intent) -> 16:피자가게전화걸기(activity_view_store_detail.xml)
 class ViewStoreDetailActivity : BaseActivity() {
 
     //15-1:Store
@@ -27,8 +27,7 @@ class ViewStoreDetailActivity : BaseActivity() {
 
     override fun setupEvents() {
 
-        //16-1:Manifest + Tedpermission
-        //16-2:CALL_PHONE
+        //17.피자가게전화걸기(Manifest + Tedpermission)
         callBtn.setOnClickListener {
 
             val permissionListener = object : PermissionListener {

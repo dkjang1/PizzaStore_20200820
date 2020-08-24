@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kakao.pizzastore_20200820">
     <!-- //9-2:Glide(build.gradle)+android:usesCleartextTraffic="true" -->
-    <uses-permission android:name="android.permission.INTERNET" /> <!-- //16:permission(CALL_PHONE) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- //17:permission(CALL_PHONE) -->
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
