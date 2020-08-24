@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kakao.pizzastore_20200820">
-    <!-- 16:android:usesCleartextTraffic="true" -->
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <!-- 19:permission(CALL_PHONE) -->
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- //9-2:Glide(build.gradle)+android:usesCleartextTraffic="true" -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- //16:permission(CALL_PHONE) -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -15,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ViewStoreDetailActivity"></activity>
+        <activity android:name=".EditNicknameActivity"></activity>
+        <activity android:name=".ViewStoreDetailActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
