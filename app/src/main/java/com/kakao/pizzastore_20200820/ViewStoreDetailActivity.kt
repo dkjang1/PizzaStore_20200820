@@ -48,7 +48,7 @@ class ViewStoreDetailActivity : BaseActivity() {
             }
 
             TedPermission.with(mContext)
-            //    .setPermissions(permissionListener)
+                .setPermissionListener(permissionListener)
                 .setDeniedMessage("[설정]에서 권한을 확인해야 전화연결이 가능합니다,")
                 .setPermissions(android.Manifest.permission.CALL_PHONE)
                 .check()
