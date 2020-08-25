@@ -8,7 +8,7 @@
     android:padding="15dp"
     tools:context=".EditNicknameActivity">
 
-    <!--18-->
+    <!--18:닉네임변경 -> 19:닉네임변겅(EditNicknameActivity.kt)-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

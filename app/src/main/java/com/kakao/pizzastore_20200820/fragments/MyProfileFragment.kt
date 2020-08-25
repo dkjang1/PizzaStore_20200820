@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.fragment_my_profile.*
 //6:내정보변경 -> 7:TabLayout(StorePagerAdapter.kt)
 class MyProfileFragment : Fragment() {
 
-    //17-1
+    //20:닉네임변겅
     val REQ_FOR_NICKNAME = 1000
 
     //6-1:onCreateView
@@ -31,7 +31,7 @@ class MyProfileFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        //17:nickname
+        //20-1:닉네임변겅
         changeNicknameBtn.setOnClickListener {
 
             val myIntent = Intent(context!!, EditNicknameActivity::class.java)
@@ -42,7 +42,7 @@ class MyProfileFragment : Fragment() {
 
     }
 
-    //20
+    //20-2:닉네임변겅(완료)
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 

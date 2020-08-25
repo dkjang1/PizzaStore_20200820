@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_edit_nickname.*
 
+//19:닉네임변겅 -> 20:닉네임변겅(EditNicknameFragment.kt)
 class EditNicknameActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,7 +17,7 @@ class EditNicknameActivity : BaseActivity() {
     }
 
     override fun setupEvents() {
-        //19
+        //19-1:닉네임변경 이벤트
         okBtn.setOnClickListener {
 
             val inputNickname = newNicknameEdt.text.toString()

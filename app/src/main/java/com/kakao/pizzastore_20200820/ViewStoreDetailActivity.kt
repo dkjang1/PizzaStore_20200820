@@ -25,9 +25,18 @@ class ViewStoreDetailActivity : BaseActivity() {
         setValues()
     }
 
+    override fun setValues() {
+
+        //15-2:Intent(activity_store_detail1)
+        mStore = intent.getSerializableExtra("storeInfo") as Store //StoreListFragment:IntentName
+        nameTxt.text = mStore.name
+        phoneNumTxt.text = mStore.phoneNum
+        Glide.with(mContext).load(mStore.logoUrl).into(logoImg)
+    }
+
     override fun setupEvents() {
 
-        //17.피자가게전화걸기(Manifest + Tedpermission)
+        //17:피자가게전화걸기(Manifest + Tedpermission) -> 18:닉네임변경-New-EmptyActivity(activity_edit_nickname.xml)
         callBtn.setOnClickListener {
 
             val permissionListener = object : PermissionListener {
@@ -52,15 +61,6 @@ class ViewStoreDetailActivity : BaseActivity() {
                 .setPermissions(android.Manifest.permission.CALL_PHONE)
                 .check()
         }
-    }
-
-    override fun setValues() {
-
-        //15-2:Intent(activity_store_detail1)
-        mStore = intent.getSerializableExtra("storeInfo") as Store //StoreListFragment:IntentName
-        nameTxt.text = mStore.name
-        phoneNumTxt.text = mStore.phoneNum
-        Glide.with(mContext).load(mStore.logoUrl).into(logoImg)
     }
 
 }
